@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+.bonc-slider {
+}
+
+.bonc-no-select {
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    cursor: default;
+}
+
+.bonc-content-subject {
+    position: absolute;
+    height: 100%;
+}
+
+.bonc-scroll-box-x {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+    opacity: 0;
+    -moz-transition: opacity .5s; /* Firefox 4 */
+    -webkit-transition: opacity .5s; /* Safari 和 Chrome */
+    -o-transition: opacity .5s; /* Opera */
+    transition: opacity .5s;
+}
+
+.bonc-scroll-bar-x {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    border-radius: 6px;
+    cursor: default;
+}
+
+.bonc-scroll-box-y {
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    -moz-transition: opacity .5s; /* Firefox 4 */
+    -webkit-transition: opacity .5s; /* Safari 和 Chrome */
+    -o-transition: opacity .5s; /* Opera */
+    transition: opacity .5s;
+}
+
+.bonc-scroll-bar-y {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    cursor: default;
+}
+
+.bonc-scroll-fadein {
+    opacity: 1;
+}
